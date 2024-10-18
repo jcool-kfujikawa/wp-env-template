@@ -1,0 +1,28 @@
+{
+  "core": "https://ja.wordpress.org/latest-ja.zip",
+  "phpVersion": "8.1",
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/contact-form-7.zip",
+    "https://downloads.wordpress.org/plugin/siteguard.zip",
+    "https://downloads.wordpress.org/plugin/http-auth.zip",
+    "https://downloads.wordpress.org/plugin/wordpress-seo.zip",
+    "https://downloads.wordpress.org/plugin/duplicate-post.zip",
+    "https://downloads.wordpress.org/plugin/show-current-template.zip"
+  ],
+  "themes": [],
+  "port": 59650,
+  "testsPort": 59651,
+  "config": {
+    "WP_DEBUG": true,
+    "WP_UPLOAD_MAX_FILESIZE": "128M",
+    "WP_MEMORY_LIMIT": "256M",
+    "WPMS_ON": true,
+    "WPMS_SMTP_HOST": "mailhog",
+    "WPMS_SMTP_PORT": 1025,
+    "WPMS_MAILER": "smtp"
+  },
+  "mappings": {
+    "wp-content/themes/originaltheme/": "./dist",
+    "sql": "./sql"
+  }
+}

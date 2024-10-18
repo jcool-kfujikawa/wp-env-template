@@ -1,0 +1,43 @@
+{
+  "name": "wp-env-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "run-p build:watch public:watch",
+    "build:watch": "vite build --watch",
+    "public:watch": "node watch.mjs",
+    "wp-env": "wp-env",
+    "wp:start": "wp-env start --update & docker compose up -d",
+    "wp:stop": "docker compose down & wp-env stop",
+    "db:export": "wp-env run cli wp db export sql/wpenv.sql",
+    "db:import": "wp-env run cli wp db import sql/wpenv.sql"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "chokidar": "^3.6.0",
+    "glob": "^10.3.12",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
+    "postcss": "^8.4.47",
+    "postcss-sort-media-queries": "^4.4.1",
+    "vite-plugin-browser-sync": "^3.0.4",
+    "vite-plugin-sass-glob-import": "^3.0.2"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.9.0",
+    "sass-embedded": "^1.79.5",
+    "vite": "^5.4.8"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ],
+  "volta": {
+    "node": "20.18.0",
+    "npm": "10.8.2"
+  }
+}
