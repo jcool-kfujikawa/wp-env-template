@@ -6,7 +6,7 @@ npm run db:export
 
 ## 2.Gitリポジトリにpush
 
-## 3.他の開発者がデータベースのインポート
+## 3.他のメンバーがデータベースのインポート
 ```bash
 npm run db:import
 ```
