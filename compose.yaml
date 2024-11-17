@@ -2,6 +2,14 @@ volumes:
   maildir: {}
 
 services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - wpnetwork
+
   mail:
     image: mailhog/mailhog
     container_name: mailhog
@@ -19,4 +27,4 @@ services:
 networks:
   wpnetwork:
     external:
-      name: 10535e8317ddaac472b09737cee4d576_default
+      name: ${WP_ENV_HASH}

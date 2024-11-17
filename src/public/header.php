@@ -10,4 +10,6 @@
 </head>
 <body>
   <main>
-    
+    <header>
+      <h1>WordPressのテンプレート</hheader>
+    </header>

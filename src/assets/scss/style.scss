@@ -1,3 +1,23 @@
-body {
-  background-color: white;
-}
+/* Foundation
+  ------------------------------------------------*/
+@use 'Foundation';
+
+/* Layout (prefix: l-)
+  ------------------------------------------------*/
+@use 'Layout';
+
+/* Component (prefix: c-)
+  ------------------------------------------------*/
+@use 'Component';
+
+/* JavaScript (prefix: js- or [data-js])
+------------------------------------------------*/
+@use 'JavaScript';
+
+/* Project (prefix: p-)
+  ------------------------------------------------*/
+@use 'Project';
+
+/* Utility (prefix: u-)
+  ------------------------------------------------*/
+@use 'Utility';

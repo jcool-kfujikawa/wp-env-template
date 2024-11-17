@@ -1,0 +1,55 @@
+@use "../Global/" as *;
+
+.l-pagenation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  list-style: none;
+}
+
+.l-pagenation__item {
+}
+
+.l-pagenation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  font-size: rem(14.4);
+  font-weight: 300;
+  transition: opacity 0.3s;
+
+  @include hover {
+    opacity: 0.7;
+  }
+}
+
+.l-pagenation__link--active {
+  pointer-events: none;
+  border: 1px solid var(--black);
+}
+
+.l-pagenation__dot {
+  font-size: rem(14.4);
+  font-weight: 300;
+  letter-spacing: -0.1em;
+}
+
+.l-pagenation__arrow {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 8px;
+  }
+}
+.l-pagenation__arrow--prev {
+  margin-right: 12px;
+  transform: rotate(180deg);
+}
+.l-pagenation__arrow--next {
+  margin-left: 12px;
+}

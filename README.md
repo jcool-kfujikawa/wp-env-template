@@ -1,10 +1,10 @@
 # WordPress開発環境
 ## 概要
-wp-envとviteを使用したWordPressの開発環境です。
+wp-envとviteを使用したWordPressの開発環境です。  
 Docker(Docker Desktop)が必要です。
 
 ## バージョン情報
-- node: 20.18.0
+- node: 20.18.0  
 - npm: 10.8.2
 
 # 最初にすること

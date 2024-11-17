@@ -1,0 +1,35 @@
+@use "../Global/" as *;
+
+.p-about {
+  @include MQ(md) {
+    margin-top: 30px;
+  }
+}
+
+.p-about__inner {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  @include MQ(md) {
+    margin-top: 30px;
+  }
+}
+
+.p-about__text {
+  font-size: rem(14.4);
+}
+
+.p-about__link {
+  transition: opacity 0.3s;
+
+  @include hover {
+    opacity: 0.7;
+  }
+}
+
+.p-about__address {
+  display: flex;
+  flex-direction: column;
+}

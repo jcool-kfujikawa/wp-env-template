@@ -1,0 +1,16 @@
+@use "../Global/" as *;
+
+.c-link {
+  display: block;
+  width: fit-content;
+  margin-top: 50px;
+  margin-inline: auto;
+  font-size: rem(14.4);
+  border-bottom: 1px solid var(--black);
+  transition: border-color 0.3s, opacity 0.3s;
+
+  @include hover {
+    opacity: 0.7;
+    border-color: transparent;
+  }
+}

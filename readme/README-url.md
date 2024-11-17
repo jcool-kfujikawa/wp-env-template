@@ -7,10 +7,22 @@ http://localhost:4869
 ## WordPress管理画面
 http://localhost:59650/wp-admin
 
-USER: admin
+USER: admin  
 PASS: password
 
-## mailhog
+## MailHog
 http://localhost:8025
 
 お問い合わせフォームの自動返信メール等はコチラに届きます。
+
+## Adminer
+http://localhost:8080
+
+▼ログイン情報  
+サーバ  　　　： mysql  
+ユーザ名  　　： root  
+パスワード	　： password  
+データベース	： wordpress  
+
+
+DBの内容を確認する際に使用します。

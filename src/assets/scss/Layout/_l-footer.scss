@@ -1,0 +1,16 @@
+@use "../Global/" as *;
+
+.l-footer {
+  margin-top: 240px;
+}
+
+.l-footer__inner {
+  padding: 10px;
+  background-color: var(--black);
+}
+
+.l-footer__copy {
+  font-size: rem(10);
+  text-align: center;
+  color: var(--white);
+}

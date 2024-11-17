@@ -1,0 +1,54 @@
+@use "../Global/" as *;
+
+.p-top-mv {
+}
+
+.p-top-mv__image {
+  width: 100%;
+  height: 420px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.p-top-works {
+  margin-top: 80px;
+}
+
+.p-top-works__list {
+  margin-top: 68px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 24px;
+
+  @include MQ(md) {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include MQ(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-top-works__item {
+}
+
+.p-top-works__link {
+  transition: opacity 0.3s;
+
+  @include hover {
+    opacity: 0.7;
+  }
+}
+
+.p-top-works__thumbnail {
+}
+
+.p-top-news {
+  margin-top: 130px;
+}

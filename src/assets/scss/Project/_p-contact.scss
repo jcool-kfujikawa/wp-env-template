@@ -1,0 +1,72 @@
+@use "../Global/" as *;
+
+.p-contact {
+  @include MQ(md) {
+    margin-top: 30px;
+  }
+}
+
+.p-contact__form {
+  margin-top: 65px;
+
+  @include MQ(md) {
+    margin-top: 30px;
+  }
+}
+
+.p-contact__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.p-contact__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.p-contact__item {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  column-gap: 16px;
+
+  @include MQ(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-contact__label {
+  font-size: rem(14.4);
+  font-weight: 300;
+}
+
+.p-contact__input {
+  font-size: rem(14.4);
+  font-weight: 300;
+  border: 1px solid var(--gray);
+  padding: 10px;
+}
+
+.p-contact__textarea {
+  min-height: 166px;
+  font-size: rem(14.4);
+  font-weight: 300;
+  border: 1px solid var(--gray);
+  padding: 10px;
+}
+
+.p-contact__submit {
+  width: 200px;
+  height: 52px;
+  margin-inline: auto;
+  font-size: rem(14.4);
+  font-weight: 300;
+  color: var(--white);
+  background-color: var(--black);
+  transition: opacity 0.3s;
+
+  @include hover {
+    opacity: 0.7;
+  }
+}
