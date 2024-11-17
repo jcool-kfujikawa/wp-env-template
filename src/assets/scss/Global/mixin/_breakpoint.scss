@@ -1,27 +1,33 @@
+@use "sass:meta";
+@use "sass:map";
+
 $breakpoints: (
-  'sm': (
+  "sm": (
     max-width: 576px,
   ),
-  'md': (
+  "md": (
     max-width: 768px,
   ),
-  'lg': (
+  "lg": (
     max-width: 992px,
   ),
-  'xl': (
+  "xl": (
     max-width: 1200px,
   ),
-  'xxl': (
+  "xxl": (
     max-width: 1400px,
   ),
-  'xxxl': (
+  "xxxl": (
     max-width: 1800px,
   ),
 ) !default;
 
 @mixin MQ($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $conditions: map.get($breakpoints, $breakpoint);
+
+    // 取得した各条件に対してメディアクエリを生成
+    @media screen and #{meta.inspect($conditions)} {
       @content;
     }
   }
