@@ -5,13 +5,14 @@ npm install
 ```
 
 ## 2.ハッシュ値取得
-この場合ハッシュ値は242ad077a237e5d5c0781dd085d26fdf  
-ハッシュ値はcompose.yamlで使用する  
+ハッシュ値はcompose.yamlで使用します。  
+
 ```bash
 node_modules/.bin/wp-env install-path
 ```
 
 例）実行結果  
+この場合ハッシュ値は`242ad077a237e5d5c0781dd085d26fdf`です。  
 ```bash
 /home/user_name/wp-env/242ad077a237e5d5c0781dd085d26fdf
 ```
