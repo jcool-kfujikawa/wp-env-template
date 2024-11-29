@@ -5,6 +5,7 @@ http://localhost:4869
 ファイル変更を検知して自動更新してくれます。
 
 ## WordPress管理画面
+http://localhost:4869/wp-admin  
 http://localhost:59650/wp-admin
 
 USER: admin  
@@ -23,6 +24,5 @@ http://localhost:8080
 ユーザ名  　　： root  
 パスワード	　： password  
 データベース	： wordpress  
-
 
 DBの内容を確認する際に使用します。
