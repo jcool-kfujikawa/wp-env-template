@@ -30,8 +30,8 @@ jobs:
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
-        server: ${{ secrets.DEV_SERVER }}
-        username: ${{ secrets.DEV_USERNAME }}
-        password: ${{ secrets.DEV_PASSWORD }}
+        server: ${{ secrets.PROD_SERVER }}
+        username: ${{ secrets.PROD_USERNAME }}
+        password: ${{ secrets.PROD_PASSWORD }}
         local-dir: ./dist/
         server-dir: /sample/

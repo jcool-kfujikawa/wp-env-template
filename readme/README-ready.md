@@ -1,4 +1,9 @@
 # 開発準備
+## 0.はじめてwp-envを使う場合
+```bash
+npm -g install @wordpress/env
+```
+
 ## 1.パッケージのインストール
 ```bash
 npm install

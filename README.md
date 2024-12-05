@@ -21,3 +21,6 @@ Docker(Docker Desktop)が必要です。
 
 # 作業終了時
 [README-end.md](readme/README-end.md)
+
+# 注意点
+[README-note.md](readme/README-note.md)
