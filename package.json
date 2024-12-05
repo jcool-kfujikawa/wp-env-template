@@ -11,7 +11,7 @@
     "public:watch": "node watch.mjs",
     "wp-env": "wp-env",
     "wp:start": "wp-env start --update & docker compose up -d",
-    "wp:stop": "docker compose down & wp-env stop",
+    "wp:stop": "wp-env run cli wp db export sql/wpenv.sql && docker compose down && wp-env stop",
     "db:export": "wp-env run cli wp db export sql/wpenv.sql",
     "db:import": "wp-env run cli wp db import sql/wpenv.sql"
   },
